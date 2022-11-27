@@ -1,48 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voting Application</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="./javascript.js" defer></script>
+
 </head>
+
 <body>
-    <div id ="form">
+    <nav>
+        <div class="menu">
+            <div>
+                <a href="./login.html">
+                    Login</a>
+                <a href="#">
+                    Don't have an Account? click here.-you are here</a>
+            </div>
+        </div>
+    </nav>
+    <div id="form">
+        <form action="thankyou.html"></form>
         <fieldset>
-            <legend><h1>Voting Management Application</h1></legend>
+            <legend>
+                <h1>Voting Management Application</h1>
+            </legend>
 
             <label>Name:</label>&nbsp &nbsp
             <input type="text" name="name" placeholder="Enter Your Name" required><br>
 
             <label>Middle Initial:</label>&nbsp &nbsp
             <input type="text" name="Middle Initial" placeholder="Enter Your Middle Initial" required><br>
-            
+
             <label>DOB:</label>&nbsp &nbsp
             <input type="data" name="DOB" required><br>
-            
+
             <label>Gender:</label>&nbsp &nbsp
             <input type="radio" name="Gender" class="g" value="male">Male
             <input type="radio" name="Gender" class="g" value="female" checked>Female
             <br><br>
 
             <label>ZipCode:</label>&nbsp &nbsp
-            <input type="number" name="ZipCode" placeholder="Enter your ZipCode" maxlength="15"
-            required><br><br>
+            <input type="number" name="ZipCode" placeholder="Enter your ZipCode" maxlength="15" required><br><br>
 
             <label>Political Parties:</label> &nbsp &nbsp
             <select name="Political">
                 <option value="Null">Choose Political Party </option>
-                    <option value="Party">Republican</option>
-                    <option value="Party">Democrat</option>
-                    <option value="Party">Independant</option>
-                    
+                <option value="Party">Republican</option>
+                <option value="Party">Democrat</option>
+                <option value="Party">Independant</option>
+
             </select><br>
-            
-        
+
+
         </fieldset>
-        <input type="submit" name="submit" value="submit">
+        <a href="./thankyou.html">
+            <input type="submit" id="register" name="submit" value="Submit" disabled="disabled">
+        </a>
     </div>
-    
+
 </body>
+
 </html>
