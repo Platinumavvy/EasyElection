@@ -28,33 +28,33 @@
             <legend>
                 <h1>Voting Management Application</h1>
             </legend>
+            <form method="get">
+                <label>Name:</label>&nbsp &nbsp
+                <input type="text" name="name" placeholder="Enter Your Name" required><br>
 
-            <label>Name:</label>&nbsp &nbsp
-            <input type="text" name="name" placeholder="Enter Your Name" required><br>
+                <label>Middle Initial:</label>&nbsp &nbsp
+                <input type="text" name="Middle Initial" placeholder="Enter Your Middle Initial" required><br>
 
-            <label>Middle Initial:</label>&nbsp &nbsp
-            <input type="text" name="Middle Initial" placeholder="Enter Your Middle Initial" required><br>
+                <label>DOB:</label>&nbsp &nbsp
+                <input type="data" name="DOB" required><br>
 
-            <label>DOB:</label>&nbsp &nbsp
-            <input type="data" name="DOB" required><br>
+                <label>Gender:</label>&nbsp &nbsp
+                <input type="radio" name="Gender" class="g" value="male">Male
+                <input type="radio" name="Gender" class="g" value="female" checked>Female
+                <br><br>
 
-            <label>Gender:</label>&nbsp &nbsp
-            <input type="radio" name="Gender" class="g" value="male">Male
-            <input type="radio" name="Gender" class="g" value="female" checked>Female
-            <br><br>
+                <label>ZipCode:</label>&nbsp &nbsp
+                <input type="number" name="ZipCode" placeholder="Enter your ZipCode" maxlength="15" required><br><br>
 
-            <label>ZipCode:</label>&nbsp &nbsp
-            <input type="number" name="ZipCode" placeholder="Enter your ZipCode" maxlength="15" required><br><br>
+                <label>Political Parties:</label> &nbsp &nbsp
+                <select name="Political">
+                    <option value="Null">Choose Political Party </option>
+                    <option value="Party">Republican</option>
+                    <option value="Party">Democrat</option>
+                    <option value="Party">Independant</option>
 
-            <label>Political Parties:</label> &nbsp &nbsp
-            <select name="Political">
-                <option value="Null">Choose Political Party </option>
-                <option value="Party">Republican</option>
-                <option value="Party">Democrat</option>
-                <option value="Party">Independant</option>
-
-            </select><br>
-
+                </select><br>
+            </form>
 
         </fieldset>
         <a href="./thankyou.html">
